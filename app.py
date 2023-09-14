@@ -33,6 +33,7 @@ JOBS = [
 def hello_jovian():
     return render_template('home.html', jobs=JOBS, company_name='Wipro')
 
+
 @app.route('/jobs')
 def list_jobs():
     return jsonify(JOBS)
